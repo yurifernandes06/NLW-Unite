@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-de-fundo: #121214;
+    --cor-texto: #ffffff;
+    --cinza: #c4c4cc;
+    --verde: #90ee90;
+    --borda: 1px solid #ffffff1a;
+    --laranja: #f48f56;
+    --laranja-hover: #f37c37;
+    --fonte: "Roboto", sans-serif;
+    --cor-botao: #00292e;
+    --branco: #e1e1e6;
+}
+
+body,
+table,
+input,
+button {
+    font: 400 16px/140% var(--fonte);
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-texto);
+}
+
+.container {
+    max-width: 690px;
+    margin: 0 auto;
+    padding: 20px 32px;
+}
+
+header {
+    padding: 20px 0;
+}
+
+form {
+    border: var(--borda);
+    border-inline: none;
+    padding: 20px 0;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset>div {
+    display: flex;
+    gap: 12px;
+}
+
+.input__wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: var(--borda);
+    border-radius: 10px;
+    padding: 8px 12px;
+    font: 400 14px/150% var(--fonte);
+    color: var(--cinza);
+}
+
+.container__botao {
+    width: fit-content;
+    border: 0;
+    background: var(--laranja);
+    border-radius: 10px;
+    padding: 7px 20px;
+    font: 700 12px/24px var(--fonte);
+    color: var(--cor-botao);
+}
+
+.container__botao:hover{
+    background: var(--laranja-hover);
+}
+
+fieldset legend, section h2 {
+    font: 700 16px/140% var(--fonte);
+    color: var(--branco);
+    padding-bottom: 16px;
+}
+
+.lista__participantes {
+    padding: 20px 0;
+}
+
+.lista__participantes > div {
+    border: var(--borda);
+    border-radius: 8px;
+}
+
+input {
+    all: unset;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table thead {
+    text-align: left;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+thead th,
+tbody td {
+    padding: 12px 16px;
+}
+
+tbody td {
+    border-top: var(--borda);
+    font-size: 13px;
+    line-height: 15px;
+    color: var(--cinza);
+}
+
+tbody td strong {
+    color: var(--cor-texto);
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+}
+
+tbody td small {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+tbody td button {
+    all: unset;
+    color: var(--verde);
+}
+
+tbody td button:hover {
+    text-decoration: underline;
+}
